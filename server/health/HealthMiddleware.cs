@@ -14,7 +14,7 @@ namespace Parkwell.cms.server
         }
 
         public async Task Invoke(HttpContext context) {
-           await context.Response.WriteAsync("No. 5 is alive");
+           await context.Response.WriteAsync("OK");
         }
     }
 }

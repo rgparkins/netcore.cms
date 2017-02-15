@@ -10,13 +10,13 @@ namespace Parkwell.cms.tests.infrastructure
         {
             Given_a_server(port: 8001);
 
-            When_calling_status_endpoint();
+            When_calling_health_endpoint();
         }
 
         [Test]
         public void Health_is_retrieved() {
             Assert.That(last_http_response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
-            Assert.That(last_http_response.Content.ReadAsStringAsync().Result, Is.EqualTo("No. 5 is alive"));
+            Assert.That(last_http_response.Content.ReadAsStringAsync().Result, Is.EqualTo("OK"));
         }
     }
 }
