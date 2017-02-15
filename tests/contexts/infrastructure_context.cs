@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
 using Parkwell.cms.server;
 
-namespace Parkwell.cms.tests.infrastructure.contexts
+namespace Parkwell.cms.tests.contexts
 {
     public class infrastructure_context : IDisposable
     {
@@ -29,6 +29,11 @@ namespace Parkwell.cms.tests.infrastructure.contexts
         protected void When_calling_status_endpoint() 
         {
             last_http_response = client.GetAsync("/status").Result;
+        }
+
+        protected void When_calling_health_endpoint() 
+        {
+            last_http_response = client.GetAsync("/health").Result;
         }
     }
 }

@@ -4,9 +4,9 @@ using Parkwell.cms.tests.contexts;
 
 namespace Parkwell.cms.tests.infrastructure
 {
-    public class Status_endpoint : infrastructure_context
+    public class Health_endpoint : infrastructure_context
     {
-        public Status_endpoint()
+        public Health_endpoint()
         {
             Given_a_server(port: 8001);
 
@@ -14,8 +14,7 @@ namespace Parkwell.cms.tests.infrastructure
         }
 
         [Test]
-        public void Status_is_retrieved() 
-        {
+        public void Health_is_retrieved() {
             Assert.That(last_http_response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
             Assert.That(last_http_response.Content.ReadAsStringAsync().Result, Is.EqualTo("No. 5 is alive"));
         }
