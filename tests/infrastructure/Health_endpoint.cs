@@ -8,7 +8,7 @@ namespace Parkwell.cms.tests.infrastructure
     {
         public Health_endpoint()
         {
-            Given_a_server(port: 8001);
+            Given_a_server();
 
             When_calling_health_endpoint();
         }

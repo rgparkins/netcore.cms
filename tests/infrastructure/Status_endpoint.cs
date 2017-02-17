@@ -8,13 +8,13 @@ namespace Parkwell.cms.tests.infrastructure
     {
         public Status_endpoint()
         {
-            Given_a_server(port: 8001);
+            Given_a_server();
 
             When_calling_status_endpoint();
         }
 
         [Test]
-        public void Status_is_retrieved() 
+        public void Status_is_retrieved()
         {
             Assert.That(last_http_response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
             Assert.That(last_http_response.Content.ReadAsStringAsync().Result, Is.EqualTo("No. 5 is alive"));

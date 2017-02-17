@@ -1,20 +1,52 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<test-run id="0" testcasecount="2" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="4" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.446076">
-  <test-run id="0" testcasecount="2" total="2" passed="2" failed="0" inconclusive="0" skipped="0" asserts="4" result="Passed" portable-engine-version="3.3.0.0" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.353018">
-    <test-suite type="Assembly" id="1004" name="netcore.cms.dll" fullname="/Users/rgparkins/dev/saucar/netcore.cms/bin/Debug/netcoreapp1.1/netcore.cms.dll" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.328075" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-      <environment framework-version="3.6.0.0" clr-version=".NET Core 4.6.24628.01" os-version="Darwin 15.5.0 Darwin Kernel Version 15.5.0: Tue Apr 19 18:36:36 PDT 2016; root:xnu-3248.50.21~8/RELEASE_X86_64" cwd="/Users/rgparkins/dev/saucar/netcore.cms" machine-name="RichardsMBP5942" culture="en-GB" uiculture="en-GB" os-architecture="X64" />
+<test-run id="0" testcasecount="1" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="1" result="Failed" portable-engine-version="3.3.0.0" start-time="2017-02-17 21:25:02Z" end-time="2017-02-17 21:26:22Z" duration="80.020755">
+  <test-run id="0" testcasecount="1" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="1" result="Failed" portable-engine-version="3.3.0.0" start-time="2017-02-17 21:25:02Z" end-time="2017-02-17 21:26:22Z" duration="79.491375">
+    <test-suite type="Assembly" id="1006" name="netcore.cms.dll" fullname="/Users/rgparkins/dev/saucar/netcore.cms/bin/Debug/netcoreapp1.1/netcore.cms.dll" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-02-17 21:25:02Z" end-time="2017-02-17 21:26:22Z" duration="79.451813" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+      <environment framework-version="3.6.0.0" clr-version=".NET Core 4.6.24628.01" os-version="Darwin 15.5.0 Darwin Kernel Version 15.5.0: Tue Apr 19 18:36:36 PDT 2016; root:xnu-3248.50.21~8/RELEASE_X86_64" cwd="/Users/rgparkins/dev/saucar/netcore.cms" machine-name="RichardsMBP5942" culture="" uiculture="" os-architecture="X64" />
       <settings>
         <setting name="WorkDirectory" value="/Users/rgparkins/dev/saucar/netcore.cms" />
       </settings>
-      <test-suite type="TestSuite" id="1005" name="Parkwell" fullname="Parkwell" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.321132" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-        <test-suite type="TestSuite" id="1006" name="cms" fullname="Parkwell.cms" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.320947" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-          <test-suite type="TestSuite" id="1007" name="tests" fullname="Parkwell.cms.tests" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.320841" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-            <test-suite type="TestSuite" id="1008" name="infrastructure" fullname="Parkwell.cms.tests.infrastructure" runstate="Runnable" testcasecount="2" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.320719" total="2" passed="2" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="4">
-              <test-suite type="TestFixture" id="1000" name="Health_endpoint" fullname="Parkwell.cms.tests.infrastructure.Health_endpoint" classname="Parkwell.cms.tests.infrastructure.Health_endpoint" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-02-15 14:39:53Z" end-time="2017-02-15 14:39:54Z" duration="0.313986" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
-                <test-case id="1001" name="Health_is_retrieved" fullname="Parkwell.cms.tests.infrastructure.Health_endpoint.Health_is_retrieved" methodname="Health_is_retrieved" classname="Parkwell.cms.tests.infrastructure.Health_endpoint" runstate="Runnable" seed="1696265610" result="Passed" start-time="2017-02-15 14:39:54Z" end-time="2017-02-15 14:39:54Z" duration="0.015538" asserts="2" />
-              </test-suite>
-              <test-suite type="TestFixture" id="1002" name="Status_endpoint" fullname="Parkwell.cms.tests.infrastructure.Status_endpoint" classname="Parkwell.cms.tests.infrastructure.Status_endpoint" runstate="Runnable" testcasecount="1" result="Passed" start-time="2017-02-15 14:39:54Z" end-time="2017-02-15 14:39:54Z" duration="0.003437" total="1" passed="1" failed="0" warnings="0" inconclusive="0" skipped="0" asserts="2">
-                <test-case id="1003" name="Status_is_retrieved" fullname="Parkwell.cms.tests.infrastructure.Status_endpoint.Status_is_retrieved" methodname="Status_is_retrieved" classname="Parkwell.cms.tests.infrastructure.Status_endpoint" runstate="Runnable" seed="1277686768" result="Passed" start-time="2017-02-15 14:39:54Z" end-time="2017-02-15 14:39:54Z" duration="0.000460" asserts="2" />
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1007" name="Parkwell" fullname="Parkwell" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-02-17 21:25:03Z" end-time="2017-02-17 21:26:22Z" duration="79.442328" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestSuite" id="1008" name="cms" fullname="Parkwell.cms" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-02-17 21:25:03Z" end-time="2017-02-17 21:26:22Z" duration="79.442021" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-suite type="TestSuite" id="1009" name="tests" fullname="Parkwell.cms.tests" runstate="Runnable" testcasecount="3" result="Failed" site="Child" start-time="2017-02-17 21:25:03Z" end-time="2017-02-17 21:26:22Z" duration="79.441823" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+            <failure>
+              <message><![CDATA[One or more child tests had errors]]></message>
+            </failure>
+            <test-suite type="TestSuite" id="1010" name="product" fullname="Parkwell.cms.tests.product" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2017-02-17 21:25:03Z" end-time="2017-02-17 21:26:22Z" duration="79.441586" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+              <failure>
+                <message><![CDATA[One or more child tests had errors]]></message>
+              </failure>
+              <test-suite type="TestFixture" id="1000" name="Adding_unqiue_product" fullname="Parkwell.cms.tests.product.Adding_unqiue_product" classname="Parkwell.cms.tests.product.Adding_unqiue_product" runstate="Runnable" testcasecount="1" result="Failed" site="Child" start-time="2017-02-17 21:25:03Z" end-time="2017-02-17 21:26:22Z" duration="79.437840" total="1" passed="0" failed="1" warnings="0" inconclusive="0" skipped="0" asserts="1">
+                <failure>
+                  <message><![CDATA[One or more child tests had errors]]></message>
+                </failure>
+                <test-case id="1001" name="The_product_is_retrieved" fullname="Parkwell.cms.tests.product.Adding_unqiue_product.The_product_is_retrieved" methodname="The_product_is_retrieved" classname="Parkwell.cms.tests.product.Adding_unqiue_product" runstate="Runnable" seed="435622756" result="Failed" start-time="2017-02-17 21:26:19Z" end-time="2017-02-17 21:26:22Z" duration="2.545763" asserts="1">
+                  <failure>
+                    <message><![CDATA[  Expected: OK
+  But was:  NotAcceptable
+]]></message>
+                    <stack-trace><![CDATA[at Parkwell.cms.tests.product.Adding_unqiue_product.The_product_is_retrieved() in /Users/rgparkins/dev/saucar/netcore.cms/tests/product/adding_unique_product.cs:line 28
+]]></stack-trace>
+                  </failure>
+                  <assertions>
+                    <assertion result="Failed">
+                      <message><![CDATA[  Expected: OK
+  But was:  NotAcceptable
+]]></message>
+                      <stack-trace><![CDATA[at Parkwell.cms.tests.product.Adding_unqiue_product.The_product_is_retrieved() in /Users/rgparkins/dev/saucar/netcore.cms/tests/product/adding_unique_product.cs:line 28
+]]></stack-trace>
+                    </assertion>
+                  </assertions>
+                </test-case>
               </test-suite>
             </test-suite>
           </test-suite>
