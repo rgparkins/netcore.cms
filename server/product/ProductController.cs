@@ -1,3 +1,4 @@
+using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +19,22 @@ namespace Parkwell.cms.server.product
         [HttpPost]
         public async Task<IActionResult> AddProduct([FromBody]Product product) 
         {
+            if(string.IsNullOrEmpty(product.Ref)) 
+            {
+                return new ContentResult
+                {
+                    StatusCode = (int)HttpStatusCode.BadRequest,
+                    Content = "Invalid product reference"
+                };
+            }
+            
+            var storedProduct = await _fetchProducts.Get(product.Ref);
+
+            if (storedProduct != null) 
+            {
+                return new StatusCodeResult((int)HttpStatusCode.Conflict);
+            }
+            
             await _storeProducts.Save(product);
             
             return Ok();

@@ -32,6 +32,8 @@ namespace Parkwell.cms.tests.product
             var product = new BsonConverter().Deserialise<Product>(content);
 
             Assert.That(product.Ref, Is.EqualTo(GetOrCreateRandomId(false)));
+            Assert.That(product.UnmappedProperties["description"], Is.EqualTo("a test"));
+            Assert.That(product.UnmappedProperties["title"], Is.EqualTo("title"));
         }
     }
 }
