@@ -16,6 +16,17 @@ namespace Parkwell.cms.tests.contexts
         private HttpClient client;
         protected HttpResponseMessage last_http_response;
         IContainer container;
+        private Guid _randomId;
+
+        public string GetOrCreateRandomId(bool create=true)
+        {
+            if (create)
+            {
+                _randomId = Guid.NewGuid();
+            }
+
+            return _randomId.ToString();
+        }
 
         public void Dispose()
         {

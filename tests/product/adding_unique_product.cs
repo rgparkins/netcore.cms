@@ -13,13 +13,13 @@ namespace Parkwell.cms.tests.product
 
             When_adding_a_product(
                 new {
-                    @ref = "random",
+                    @ref = GetOrCreateRandomId(),
                     description = "a test",
                     title = "title"
                 }
             );
 
-            When_retrieving_product_by_reference("random");
+            When_retrieving_product_by_reference(GetOrCreateRandomId(false));
         }
 
         [Test]
@@ -31,7 +31,7 @@ namespace Parkwell.cms.tests.product
 
             var product = new BsonConverter().Deserialise<Product>(content);
 
-            Assert.That(last_http_response.Content.ReadAsStringAsync().Result, Is.EqualTo(HttpStatusCode.OK));
+            Assert.That(product.Ref, Is.EqualTo(GetOrCreateRandomId(false)));
         }
     }
 }
