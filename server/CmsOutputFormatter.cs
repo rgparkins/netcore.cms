@@ -13,12 +13,6 @@ namespace Parkwell.cms.server
         public bool CanWriteResult(OutputFormatterCanWriteContext context)
         {
             return true;
-            if (context == null)
-                throw new ArgumentNullException(nameof(context));
-            if (context.ContentType == null  || context.ContentType.ToString().StartsWith("application/json"))
-                return true;
-
-            return false;
         }
 
         public Task WriteAsync(OutputFormatterWriteContext context)

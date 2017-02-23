@@ -1,7 +1,5 @@
 using NUnit.Framework;
 using System.Net;
-using Parkwell.cms.server.serialisation;
-using Parkwell.cms.server.product;
 
 namespace Parkwell.cms.tests.product
 {

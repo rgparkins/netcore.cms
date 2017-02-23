@@ -6,9 +6,4 @@ namespace Parkwell.cms.server.product
     {
         Task Save(Product product);
     }
-
-    public interface IFetchProducts
-    {
-        Task<Product> Get(string productReference);
-    }
 }
