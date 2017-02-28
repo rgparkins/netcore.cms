@@ -1,7 +1,7 @@
 // Karma configuration
-// Generated on 2017-02-25
+// Generated on 2017-02-28
 
-module.exports = function(config) {
+module.exports = function (config) {
   'use strict';
 
   config.set({
@@ -32,7 +32,6 @@ module.exports = function(config) {
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',
-      'test/mock/**/*.js',
       'test/spec/**/*.js'
     ],
 

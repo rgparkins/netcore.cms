@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
@@ -22,6 +23,7 @@ namespace Parkwell.cms.server
                         options.ThreadCount = int.Parse(config["threadCount"]);
                     }
                 })
+                .UseContentRoot(Path.Combine(Directory.GetCurrentDirectory(), "server/ui"))
                 .UseUrls("http://localhost:5000");
 
             var host = builder.Build();
