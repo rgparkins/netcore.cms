@@ -2,7 +2,9 @@ var compile, scope, directiveElem;
 
 describe("form control", function () {
 
-  beforeEach(module('webApp'));
+  beforeEach(module("my.templates")); 
+  
+  //beforeEach(module('webApp'));
 
   beforeEach(inject(function (_$compile_, _$rootScope_) {
     compile = _$compile_;

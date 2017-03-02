@@ -8,7 +8,11 @@
  */
 angular.module('webApp')
   .directive('dynamicForm', function () {
-    return function (scope, elem) {
-      elem.append('<span>This span is appended from directive.</span>');
+    return {
+      restrict: 'A',
+      templateUri: 'views/templates/dynamicForm.html'
     };
+    // return function (scope, elem) {
+    //     elem.append('<span>This span is appended from directive.</span>');
+    //   };
   });
