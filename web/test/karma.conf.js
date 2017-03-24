@@ -18,7 +18,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      'app/views/*.html': ['ng-html2js']
+      'app/views/templates/*.html': ['ng-html2js']
     },
 
     ngHtml2JsPreprocessor: {
@@ -61,13 +61,14 @@ module.exports = function (config) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: [
-      'PhantomJS'
+      'Chrome'
     ],
 
     // Which plugins to enable
     plugins: [
-      'karma-phantomjs-launcher',
+      //'karma-phantomjs-launcher',
       'karma-jasmine',
+      'karma-chrome-launcher',
       'karma-ng-html2js-preprocessor'
     ],
 

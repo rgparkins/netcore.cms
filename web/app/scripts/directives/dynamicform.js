@@ -7,12 +7,19 @@
  * # dynamicForm
  */
 angular.module('webApp')
-  .directive('dynamicForm', function () {
+  .directive('dynamicForm', function ($compile) {
     return {
-      restrict: 'A',
-      templateUri: 'views/templates/dynamicForm.html'
+      //replace: true,
+      templateUrl: 'views/templates/dynamicForm.html',
+      controller: formController
     };
     // return function (scope, elem) {
     //     elem.append('<span>This span is appended from directive.</span>');
     //   };
+  });
+
+
+angular.module('webApp')
+  .controller("formController", function() {
+
   });
