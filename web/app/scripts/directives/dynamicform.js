@@ -7,19 +7,22 @@
  * # dynamicForm
  */
 angular.module('webApp')
-  .directive('dynamicForm', function ($compile) {
+  .directive('dynamicForm', function ($compile, metaDataService) {
     return {
       //replace: true,
       templateUrl: 'views/templates/dynamicForm.html',
-      controller: formController
+      controllerAs: 'ctrl',
+      restrict: 'EAMC',
+      replace: true,
+      scope: {
+        //@ reads the attribute value, = provides two-way binding, & works with functions
+        formType: '@'
+      },
+      controller: function ($scope, metaDataService) {
+        alert($scope.formType);
+        metaDataService.getMetadataByProduct($scope.formType, function(err, data) {
+          $scope.metaData = data;
+        });
+      }
     };
-    // return function (scope, elem) {
-    //     elem.append('<span>This span is appended from directive.</span>');
-    //   };
-  });
-
-
-angular.module('webApp')
-  .controller("formController", function() {
-
   });

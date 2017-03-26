@@ -33,3 +33,18 @@ angular
         redirectTo: '/'
       });
   });
+
+angular.module('webApp')
+  .factory('metaDataService', function ($http) {
+    return {
+      getMetadataByProduct: function (name, callback) {
+        try {
+          $http.get("/api/metadata/" + name).then(function (err, data) {
+            callback(err, data);
+          })
+        } catch (ex) {
+          callback(ex);
+        }
+      }
+    }
+  });

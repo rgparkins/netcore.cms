@@ -40,8 +40,8 @@ namespace Parkwell.cms.tests.product
 
             var metaData = new BsonConverter().Deserialise<ProductMetadata>(content);
 
-            Assert.That(metaData.Categories.Count, Is.EqualTo(2));
-            Assert.That(metaData.SubCategories.Count, Is.EqualTo(3));
+            Assert.That(metaData.Category.Count, Is.EqualTo(2));
+            Assert.That(metaData.SubCategory.Count, Is.EqualTo(3));
         }
     }
 }
