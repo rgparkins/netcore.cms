@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Parkwell.cms.server.metadata
@@ -6,5 +7,12 @@ namespace Parkwell.cms.server.metadata
     {
         [Required]
         public string CollectionName { get; set; }
+
+        public List<Question> Questions { get; set; }
+    }
+
+    public class Question : Document
+    {
+        public string Title { get; set; }
     }
 }

@@ -20,8 +20,10 @@ namespace Parkwell.cms.tests.product
         [Test]
         public void The_response_indicates_failure() 
         {
+            var content = last_http_response.Content.ReadAsStringAsync().Result;
+            
             Assert.That(last_http_response.StatusCode, Is.EqualTo(HttpStatusCode.BadRequest));
-            Assert.That(last_http_response.Content.ReadAsStreamAsync().Result, Is.EqualTo("Invalid product reference"));
+            Assert.That(content, Is.EqualTo("Invalid product reference"));
         }
     }
 }

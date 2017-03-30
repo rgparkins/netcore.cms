@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System.Net;
 using Parkwell.cms.server.serialisation;
 using Parkwell.cms.server.metadata;
+using System.Collections.Generic;
 
 namespace Parkwell.cms.tests.product
 {
@@ -12,17 +13,25 @@ namespace Parkwell.cms.tests.product
             Given_a_server();
 
             When_adding_metadata(
-                new {
-                    categories = new []
-                    {
-                        "Watches",
-                        "Rings"
-                    },
-                    subCategories = new []
-                    {
-                        "Tissot",
-                        "Rolex",
-                        "Cartier"
+                new
+                {
+                    questions = new[] {
+                      new {
+                        title = "Category",
+                        options = new[]
+                        {
+                            "Watches",
+                            "Rings"
+                        }
+                      },
+                      new {
+                        title = "Sub category",
+                        options = new[]
+                        {
+                            "Bracelets",
+                            "Toe rings"
+                        }
+                      }
                     },
                     collectionName = "product"
                 }
@@ -32,16 +41,27 @@ namespace Parkwell.cms.tests.product
         }
 
         [Test]
-        public void The_metadata_is_retrieved() 
+        public void The_metadata_is_retrieved()
         {
             Assert.That(last_http_response.StatusCode, Is.EqualTo(HttpStatusCode.OK));
 
             var content = last_http_response.Content.ReadAsStringAsync().Result;
 
-            var metaData = new BsonConverter().Deserialise<ProductMetadata>(content);
+            var metaData = new BsonConverter().Deserialise<Metadata>(content);
 
-            Assert.That(metaData.Category.Count, Is.EqualTo(2));
-            Assert.That(metaData.SubCategory.Count, Is.EqualTo(3));
+            Assert.That(metaData.Questions.Count, Is.EqualTo(2));
+            
+            var categoryQuestion = metaData.Questions[0];
+            var categoryOptions = categoryQuestion.UnmappedProperties["options"];
+            
+            Assert.That(categoryQuestion.Title, Is.EqualTo("Category"));
+            Assert.That(categoryOptions, Is.EquivalentTo(new List<string> {"Watches", "Rings"}));
+
+            var subcategoryQuestion = metaData.Questions[1];
+            var subcategoryOptions = subcategoryQuestion.UnmappedProperties["options"];
+            
+            Assert.That(subcategoryQuestion.Title, Is.EqualTo("Sub category"));
+            Assert.That(subcategoryOptions, Is.EquivalentTo(new List<string> {"Bracelets", "Toe rings"}));
         }
     }
 }

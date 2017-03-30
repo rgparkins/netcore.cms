@@ -26,8 +26,7 @@ namespace Parkwell.cms.server.metadata
                  return CreatedAtRoute("GetMetadata", new { collectionName = metadata.CollectionName}, metadata);
              }
 
-             return BadRequest("Please set a collectionName");
-             
+             return BadRequest(ModelState);
         }
 
         [Route("api/metadata/{collectionName}", Name="GetMetadata")]

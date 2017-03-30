@@ -1,0 +1,10 @@
+<form id="{{formType}}-form">
+    <input type="hidden" id="collectionName" value="{{formType}}">
+
+    <div class="form-group" ng-repeat="(key, value) in vm.questions">
+        <label for="{{key}}-input">{{key}}</label>
+        <select ng-if="vm.isDropdown(value)">
+
+        </select>
+    </div>
+</form>
