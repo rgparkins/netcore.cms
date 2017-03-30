@@ -36,6 +36,8 @@ describe("form control", function () {
   it('should have category field with options', function () {
     var mainCategory = directiveElem.find('select[name="category"]');
 
+    alert(mainCategory);
+    
     expect(mainCategory.length).toEqual(1);
   });
 });
@@ -47,7 +49,5 @@ function getCompiledElement() {
 
   scope.$digest();
 
-  alert(compiledElement);
-  
   return compiledElement;
 }

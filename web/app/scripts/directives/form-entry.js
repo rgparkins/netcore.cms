@@ -7,29 +7,31 @@
  * # formEntry
  */
 angular.module('webApp')
-  .directive('formEntry', function ($compile, metaDataService) {
+  .directive('formEntry', function () {
     return {
       templateUrl: 'views/templates/form-entry.html',
       replace: true,
-      scope: {
-        formType: '@',
-        isDropdown: '&'
+      bindToController: {
+        formType: '@'
       },
-      controller: function ($scope, $element, $attrs, metaDataService) {
+      controllerAs: 'vm',
+      controller: function (metaDataService, $attrs) {
+        var vm = this;
         
-        function isDropdown(value) {
+        this.getQuestions = function () {
+          return vm.questions;
+        };
+
+        vm.isDropdown = function (value) {
           return angular.isArray(value);
-        }
+        };
 
         function init() {
-          $scope.questions = {
-            collectionName: 'product', category: ['Watches'], subCategory: ['Cartier']
-          };
-
-          metaDataService.getMetadataByProduct($attrs.formType, function (data) {
-            $scope.questions = data;
+           alert("formtype = " + $attrs.formType);
+           metaDataService.getMetadataByProduct($attrs.formType).then(function (data) {
+            vm.questions = data;
           });
-        }
+        };
 
         init();
       }
