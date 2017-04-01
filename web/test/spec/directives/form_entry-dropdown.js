@@ -16,6 +16,7 @@ describe("form control", function () {
           collectionName: 'product',
           questions: [{
             id: "category",
+            questionType: "dropdown",
             title: "Category",
             options: [
               "Watches",
@@ -24,6 +25,7 @@ describe("form control", function () {
           },
           {
             id: "subCategory",
+            questionType: "dropdown",
             title: "Sub category",
             options: [
               "Cartier",
