@@ -39,6 +39,9 @@ module.exports = function (config) {
       'bower_components/angular-sanitize/angular-sanitize.js',
       'bower_components/angular-touch/angular-touch.js',
       'bower_components/angular-mocks/angular-mocks.js',
+      
+      'node_modules/babel-polyfill/dist/polyfill.min.js',      
+      "node_modules/linq-for-js/dist/linq-for-js.min.js",
       // endbower
       'app/scripts/**/*.js',
       'test/spec/**/*.js',

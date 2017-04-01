@@ -17,19 +17,26 @@ angular.module('webApp')
       controllerAs: 'vm',
       controller: function (metaDataService, $attrs) {
         var vm = this;
-        
+
         this.getQuestions = function () {
           return vm.questions;
         };
 
-        vm.isDropdown = function (value) {
-          return angular.isArray(value);
+        vm.isDropdown = function (id) {
+          var question = vm.questions.single(i => i.id === id);
+
+          return question.options || angular.isArray(question.options);
         };
 
+        vm.getOptionsForDropdown = function (id) {
+            var question = vm.questions.single(i => i.id === id);
+
+            return question.options;
+        }
+
         function init() {
-           alert("formtype = " + $attrs.formType);
-           metaDataService.getMetadataByProduct($attrs.formType).then(function (data) {
-            vm.questions = data;
+          metaDataService.getMetadataByProduct($attrs.formType).then(function (data) {
+            vm.questions = data.questions;
           });
         };
 

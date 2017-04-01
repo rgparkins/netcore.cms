@@ -11,10 +11,27 @@ describe("form control", function () {
 
     spyOn(metaDataService, "getMetadataByProduct").and.callFake(function () {
       var deferred = $q.defer();
-      deferred.resolve({
-        collectionName: 'product', category: ['Watches'], subCategory: ['Cartier']
-      });
-      
+      deferred.resolve(
+        {
+          collectionName: 'product',
+          questions: [{
+            id: "category",
+            title: "Category",
+            options: [
+              "Watches",
+              "Rings"
+            ]
+          },
+          {
+            id: "subCategory",
+            title: "Sub category",
+            options: [
+              "Cartier",
+              "Longines"
+            ]
+          }],
+        });
+
       return deferred.promise;
     });
 
@@ -34,11 +51,23 @@ describe("form control", function () {
   });
 
   it('should have category field with options', function () {
-    var mainCategory = directiveElem.find('select[name="category"]');
-
-    alert(mainCategory);
+    expect(directiveElem.find('label:contains("Category")').length).toEqual(1);
     
+    var mainCategory = directiveElem.find('select[name="category"]');
     expect(mainCategory.length).toEqual(1);
+
+    expect(mainCategory.find('option[value="Watches"]').length).toEqual(1);
+    expect(mainCategory.find('option[value="Rings"]').length).toEqual(1);
+  });
+
+  it('should have sub category field with options', function () {
+    expect(directiveElem.find('label:contains("Sub category")').length).toEqual(1);
+    
+    var mainCategory = directiveElem.find('select[name="subCategory"]');
+    expect(mainCategory.length).toEqual(1);
+
+    expect(mainCategory.find('option[value="Cartier"]').length).toEqual(1);
+    expect(mainCategory.find('option[value="Longines"]').length).toEqual(1);
   });
 });
 

@@ -41,5 +41,9 @@
   },
   "scripts": {
     "test": "karma start test/karma.conf.js"
+  },
+  "dependencies": {
+    "babel-polyfill": "6.23.0",
+    "linq-for-js": "1.5.1"
   }
 }
