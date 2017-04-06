@@ -39,7 +39,17 @@ angular.module('webApp')
     return {
       getMetadataByProduct: function (name, callback) {
         $http.get("/api/metadata/" + name).then(function (e) {
+          callback(e);
+        });
+      }
+    };
+  });
 
+angular.module('webApp')
+  .factory('dataService', function ($http) {
+    return {
+      getData: function (name, id, callback) {
+        $http.get("/api/" + name + "/" + id).then(function (e) {
           callback(e);
         });
       }

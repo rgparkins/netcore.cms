@@ -1,5 +1,6 @@
 <form id="{{vm.formType}}-form">
-    <input type="hidden" id="collectionName" value="{{vm.formType}}">
+    <input type="hidden" name="collectionName" id="collectionName" value="{{vm.formType}}">
+    <input type="hidden" name="id" id="id" value="{{vm.formData}}">   
 
     <div class="form-group" ng-repeat="question in vm.questions" ng-switch="question.questionType">
         <label for="question-input">{{question.title}}</label>

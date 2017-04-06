@@ -1,13 +1,12 @@
-var compile, scope, directiveElem;
-
 describe("form control", function () {
+  var directiveElem;
+
   beforeEach(module("my.templates"));
 
   beforeEach(module('webApp'));
 
   beforeEach(inject(function (_$compile_, _$rootScope_, $q, metaDataService) {
-    compile = _$compile_;
-    scope = _$rootScope_;
+    q = $q;
 
     spyOn(metaDataService, "getMetadataByProduct").and.callFake(function () {
       var deferred = $q.defer();
@@ -18,19 +17,21 @@ describe("form control", function () {
             questionType: 'text',
             id: "name",
             placeholder: "Please enter your name",
-            title: "Name"            
+            title: "Name"
           }]
         });
 
       return deferred.promise;
     });
 
-    directiveElem = getCompiledElement();
+     directiveElem = _$compile_(angular.element('<form-entry form-type="products"/>'))(_$rootScope_);
+
+    _$rootScope_.$digest();
   }));
 
   it('should have text field', function () {
     expect(directiveElem.find('label:contains("Name")').length).toEqual(1);
-    
+
     var textInput = directiveElem.find('input[name="name"]');
 
     expect(textInput.length).toEqual(1);
@@ -38,13 +39,3 @@ describe("form control", function () {
     expect(textInput.attr('placeholder')).toEqual("Please enter your name");
   });
 });
-
-function getCompiledElement() {
-  var element = angular.element('<form-entry form-type="product"/>');
-
-  var compiledElement = compile(element)(scope);
-
-  scope.$digest();
-
-  return compiledElement;
-}
