@@ -19,7 +19,7 @@ namespace Parkwell.cms.server.product
         [HttpPost]
         public async Task<IActionResult> AddProduct([FromBody]Product product) 
         {
-            if(string.IsNullOrEmpty(product.Ref)) 
+            if(string.IsNullOrEmpty(product.Id)) 
             {
                 return new ContentResult
                 {
@@ -28,7 +28,7 @@ namespace Parkwell.cms.server.product
                 };
             }
             
-            var storedProduct = await _fetchProducts.Get(product.Ref);
+            var storedProduct = await _fetchProducts.Get(product.Id);
 
             if (storedProduct != null) 
             {

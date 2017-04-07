@@ -3,6 +3,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Parkwell.cms.server.metadata
 {
+    public enum QuestionType {
+        Dropdown,
+        TextArea,
+        Text
+    }
     public class Metadata : Document
     {
         [Required]
@@ -13,6 +18,10 @@ namespace Parkwell.cms.server.metadata
 
     public class Question : Document
     {
+        public string Id { get; set; }
+
         public string Title { get; set; }
+
+        public QuestionType QuestionType { get; set;}
     }
 }

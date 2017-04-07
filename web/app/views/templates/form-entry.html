@@ -4,14 +4,13 @@
 
     <div class="form-group" ng-repeat="question in vm.questions" ng-switch="question.questionType">
         <label for="question-input">{{question.title}}</label>
-
-        <select ng-switch-when="dropdown" name="{{question.id}}" ng-options="item as item for item in question.options track by item" ng-model="vm.answers[question.id]"></select>>
+        <select ng-switch-when="dropdown" name="{{question.id}}" ng-options="item as item for item in question.options track by item" ng-model="vm.answers[question.id]"></select>
         
-        <textarea ng-switch-when="textarea" ng-model="vm.answers[question.id]" placeholder="{{question.placeholder}}" name="{{question.id}}"></textarea>
+        <textarea ng-switch-when="textarea" ng-model="vm.answers.description" placeholder="{{question.placeholder}}" name="{{question.id}}">{{vm.answers.description}}</textarea>
 
         <input ng-switch-when="text" name="{{question.id}}" ng-model="vm.answers[question.id]" placeholder="{{question.placeholder}}" type="text"/>
     </div>
     <div class="form-group">
-        <input type="button" ng-click="submit" value="Add" />
+        <input type="button" ng-click="submit" value="{{vm.buttonText}}"/>
     </div>
 </form>

@@ -1,5 +1,5 @@
-describe("form initialisation", function () {
-  var directiveElem;
+describe("form initialisation - text area", function () {
+  var directiveElem, q;
 
   beforeEach(module("my.templates"));
 
@@ -12,35 +12,20 @@ describe("form initialisation", function () {
         {
           collectionName: 'products',
           questions: [{
-            id: "category",
-            questionType: "dropdown",
-            title: "Category",
-            options: [
-              "Watches",
-              "Rings"
-            ]
-          },
-          {
-            id: "subCategory",
-            questionType: "dropdown",
-            title: "Sub category",
-            options: [
-              "Cartier",
-              "Longines"
-            ]
+            id: "description",
+            questionType: "textarea",
+            title: "Description"
           }],
         });
 
       return deferred.promise;
     });
-
     spyOn(dataService, "getData").and.callFake(function () {
       var deferred = $q.defer();
       deferred.resolve(
         {
           id: 123,
-          category: 'Rings',
-          subCategory: 'Longines'
+          description: 'A big long jug in the morning'
         });
 
       return deferred.promise;
@@ -75,10 +60,9 @@ describe("form initialisation", function () {
   });
 
   it('should have selected the correct data', function () {
-    var category = directiveElem.find('option[selected="selected"]').first();
-    var subCategory = directiveElem.find('option[selected="selected"]').last();
-
-    expect(category.attr("value")).toEqual("Rings");
-    expect(subCategory.attr("value")).toEqual("Longines");
+    var text = directiveElem.find('textarea:contains("A big long jug in the morning")').first();
+    
+    //alert(directiveElem);
+    expect(text.length).toEqual(1);
   });
 });

@@ -11,14 +11,14 @@ namespace Parkwell.cms.server.product
 
         public Task<Product> Get(string productReference)
         {
-            var result = products.SingleOrDefault(p => p.Ref == productReference);
+            var result = products.SingleOrDefault(p => p.Id == productReference);
 
             return Task.FromResult(result);
         }
 
         public Task Save(Product product)
         {
-            if (products.Any(p => p.Ref == product.Ref)) 
+            if (products.Any(p => p.Id == product.Id)) 
             {
                 throw new Exception("Duplicate key exception");
             }

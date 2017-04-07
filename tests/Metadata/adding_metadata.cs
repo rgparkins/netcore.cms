@@ -17,6 +17,8 @@ namespace Parkwell.cms.tests.product
                 {
                     questions = new[] {
                       new {
+                        questionType = "Dropdown",
+                        id = "category",
                         title = "Category",
                         options = new[]
                         {
@@ -25,6 +27,8 @@ namespace Parkwell.cms.tests.product
                         }
                       },
                       new {
+                        questionType = "Dropdown",
+                        id = "subcategory",
                         title = "Sub category",
                         options = new[]
                         {
@@ -55,11 +59,13 @@ namespace Parkwell.cms.tests.product
             var categoryOptions = categoryQuestion.UnmappedProperties["options"];
             
             Assert.That(categoryQuestion.Title, Is.EqualTo("Category"));
+            Assert.That(categoryQuestion.Id, Is.EqualTo("category"));
             Assert.That(categoryOptions, Is.EquivalentTo(new List<string> {"Watches", "Rings"}));
 
             var subcategoryQuestion = metaData.Questions[1];
             var subcategoryOptions = subcategoryQuestion.UnmappedProperties["options"];
             
+            Assert.That(subcategoryQuestion.Id, Is.EqualTo("subCategory"));
             Assert.That(subcategoryQuestion.Title, Is.EqualTo("Sub category"));
             Assert.That(subcategoryOptions, Is.EquivalentTo(new List<string> {"Bracelets", "Toe rings"}));
         }

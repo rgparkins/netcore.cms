@@ -1,5 +1,3 @@
-var q;
-
 describe("form control", function () {
   var directiveElem;
 
@@ -8,10 +6,35 @@ describe("form control", function () {
   beforeEach(module('webApp'));
 
   beforeEach(inject(function (_$compile_, _$rootScope_, $q, metaDataService) {
-    spyOn(metaDataService, "getMetadataByProduct").and.callFake(fakeService);
-    q = $q;
+    spyOn(metaDataService, "getMetadataByProduct").and.callFake(function () {
+      var deferred = $q.defer();
+      deferred.resolve(
+        {
+          collectionName: 'products',
+          questions: [{
+            id: "category",
+            questionType: "dropdown",
+            title: "Category",
+            options: [
+              "Watches",
+              "Rings"
+            ]
+          },
+          {
+            id: "subCategory",
+            questionType: "dropdown",
+            title: "Sub category",
+            options: [
+              "Cartier",
+              "Longines"
+            ]
+          }],
+        });
 
-     directiveElem = _$compile_(angular.element('<form-entry form-type="products"/>'))(_$rootScope_);
+      return deferred.promise;
+    });
+
+    directiveElem = _$compile_(angular.element('<form-entry form-type="products"/>'))(_$rootScope_);
 
     _$rootScope_.$digest();
   }));
@@ -22,6 +45,12 @@ describe("form control", function () {
     expect(directiveElem.attr('id')).toEqual('products-form');
   });
 
+  it('should have form button labelled "Add"', function () {
+    var button = directiveElem.find('input[type="button"][value="Add"]');
+
+    expect(button.length).toEqual(1);
+  });
+
   it('should have hidden field set correctly', function () {
     var hiddenField = directiveElem.find('input[type="hidden"]').first();
 
@@ -29,6 +58,7 @@ describe("form control", function () {
   });
 
   it('should have category field with options', function () {
+    alert(directiveElem);
     expect(directiveElem.find('label:contains("Category")').length).toEqual(1);
 
     var mainCategory = directiveElem.find('select[name="category"]');
@@ -50,29 +80,5 @@ describe("form control", function () {
 });
 
 function fakeService() {
-  var deferred = q.defer();
-  deferred.resolve(
-    {
-      collectionName: 'products',
-      questions: [{
-        id: "category",
-        questionType: "dropdown",
-        title: "Category",
-        options: [
-          "Watches",
-          "Rings"
-        ]
-      },
-      {
-        id: "subCategory",
-        questionType: "dropdown",
-        title: "Sub category",
-        options: [
-          "Cartier",
-          "Longines"
-        ]
-      }],
-    });
 
-  return deferred.promise;
 }
