@@ -1,0 +1,16 @@
+<form id="{{vm.formType}}-form">
+    <input type="hidden" name="collectionName" id="collectionName" value="{{vm.formType}}">
+    <input type="hidden" name="id" id="id" value="{{vm.formData}}">   
+
+    <div class="form-group" ng-repeat="question in vm.questions" ng-switch="question.questionType">
+        <label for="{{question.id}}">{{question.title}}</label>
+        <select ng-switch-when="dropdown" id="{{question.id}}" name="{{question.id}}" ng-options="item as item for item in question.options track by item" ng-model="vm.answers[question.id]"></select>
+        
+        <textarea ng-switch-when="textarea" id="{{question.id}}" name="{{question.id}}" ng-model="vm.answers.description" placeholder="{{question.placeholder}}">{{vm.answers.description}}</textarea>
+
+        <input ng-switch-when="text" name="{{question.id}}" ng-model="vm.answers[question.id]" placeholder="{{question.placeholder}}" type="text"/>
+    </div>
+    <div class="form-group">
+        <input type="button" ng-click="submit" value="{{vm.buttonText}}"/>
+    </div>
+</form>
