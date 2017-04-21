@@ -2,13 +2,13 @@ using System;
 using System.Collections.Concurrent;
 using System.Threading.Tasks;
 
-namespace Parkwell.cms.server.metadata 
+namespace Parkwell.cms.server.metadata
 {
     public class InMemoryMetadataStore : IFetchMetadata, IStoreMetadata
     {
         ConcurrentDictionary<string, Metadata> metadatas = new ConcurrentDictionary<string, Metadata>();
 
-        public Task<Metadata> FetchByCollection(string collectionName) 
+        public Task<Metadata> FetchByCollection(string collectionName)
         {
             if (metadatas.ContainsKey(collectionName))
             {
@@ -20,7 +20,7 @@ namespace Parkwell.cms.server.metadata
 
         public Task Store(Metadata data)
         {
-            if (metadatas.ContainsKey(data.CollectionName)) 
+            if (metadatas.ContainsKey(data.CollectionName))
             {
                 throw new Exception("Already exists");
             }
