@@ -56,7 +56,7 @@ namespace Parkwell.cms.server
             // Create the container builder.
             var builder = new ContainerBuilder();
 
-            builder.RegisterModule<InMemoryModule>();
+            builder.RegisterModule<InMemoryStorageModule>();
             builder.Populate(services);
             
             Container = builder.Build();

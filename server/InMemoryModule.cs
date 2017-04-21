@@ -4,7 +4,15 @@ using Parkwell.cms.server.product;
 
 namespace Parkwell.cms.server
 {
-    public class InMemoryModule : Module 
+    public class MongoStorageModule : Module {
+
+        protected override void Load(ContainerBuilder builder) 
+        {
+
+        }
+    }
+    
+    public class InMemoryStorageModule : Module 
     {
         protected override void Load(ContainerBuilder bldr) 
         {
