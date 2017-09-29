@@ -1,0 +1,28 @@
+{
+  "name": "parkwell-cms",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/repo"
+  },
+  "author": {
+    "name": "Richard Parkins",
+    "email": "rgarkins@hotmail.com"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/username/repo/issues"
+  },
+  "main": "parkwell-cms.umd.js",
+  "module": "parkwell-cms.js",
+  "jsnext:main": "parkwell-cms.js",
+  "typings": "parkwell-cms.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
