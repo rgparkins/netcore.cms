@@ -13,7 +13,7 @@ namespace Parkwell.cms.tests.product
 
             When_adding_a_product(
                 new {
-                    @ref = GetOrCreateRandomId(),
+                    @id = GetOrCreateRandomId(),
                     description = "a test",
                     title = "title"
                 }

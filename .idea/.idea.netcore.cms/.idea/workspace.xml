@@ -2,13 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="817b505c-4cc7-49a2-a83f-971ac93188c4" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/netcore.cms.xproj" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/backup/project.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/npm-debug.log" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/server/web/npm-debug.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/tests/Program.cs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.bowerrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.editorconfig" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.gitattributes" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.gitignore" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.jscsrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/.yo-rc.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/404.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/favicon.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/images/yeoman.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/robots.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/scripts/app.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/scripts/controllers/about.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/scripts/controllers/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/scripts/directives/form-entry.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/styles/main.scss" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/views/about.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/views/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/app/views/templates/form-entry.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/bower.json" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/web/npm-debug.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/.jshintrc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/karma.conf.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/controllers/about.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/controllers/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/directives/html/form_entry-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/directives/html/form_entry-textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/directives/html/form_entry-textinput.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/directives/initialisation/form_edit-dropdown.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/web/test/spec/directives/initialisation/form_edit-textarea.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.netcore.cms/.idea/contentModel.xml" afterPath="$PROJECT_DIR$/.idea/.idea.netcore.cms/.idea/contentModel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.netcore.cms/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/.idea.netcore.cms/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.idea.netcore.cms/riderModule.iml" afterPath="$PROJECT_DIR$/.idea/.idea.netcore.cms/riderModule.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Program.cs" afterPath="$PROJECT_DIR$/server/Program.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/Startup.cs" afterPath="$PROJECT_DIR$/server/Startup.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/server.csproj" afterPath="$PROJECT_DIR$/server/server.csproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/web/test/karma.conf.js" afterPath="$PROJECT_DIR$/server/web/test/karma.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/package.json" afterPath="$PROJECT_DIR$/web/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/test/karma.conf.js" afterPath="$PROJECT_DIR$/web/test/karma.conf.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" afterPath="$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/product/adding_already_existing_product.cs" afterPath="$PROJECT_DIR$/tests/product/adding_already_existing_product.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/product/adding_unique_product.cs" afterPath="$PROJECT_DIR$/tests/product/adding_unique_product.cs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/tests.csproj" afterPath="$PROJECT_DIR$/tests/tests.csproj" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,24 +61,80 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EnviromentVarsMiddleware.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs">
+      <file leaf-file-name="server.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server/server.csproj">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="0">
+              <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tests.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/tests.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adding_metadata.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
               <folding>
-                <marker date="1505061251000" expanded="true" signature="6:197" ph="..." />
-                <marker date="1505061251000" expanded="true" signature="228:1452" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="273:1450" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="404:450" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="506:584" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="670:950" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="973:1304" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="1084:1261" ph="{...}" />
-                <marker date="1505061251000" expanded="true" signature="1366:1444" ph="{...}" />
+                <marker date="1506633949000" expanded="false" signature="6:151" ph="..." />
+                <marker date="1506633949000" expanded="true" signature="189:2572" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="252:2570" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="291:1331" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="403:1256" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="443:1190" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="471:799" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="673:775" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="827:1168" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="1036:1144" ph="{...}" />
+                <marker date="1506633949000" expanded="true" signature="1395:2564" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adding_unique_product.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/tests/product/adding_unique_product.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+              <folding>
+                <marker date="1506634404000" expanded="false" signature="6:116" ph="..." />
+                <marker date="1506634404000" expanded="true" signature="154:1213" ph="{...}" />
+                <marker date="1506634404000" expanded="true" signature="229:1211" ph="{...}" />
+                <marker date="1506634404000" expanded="true" signature="274:623" ph="{...}" />
+                <marker date="1506634404000" expanded="true" signature="371:519" ph="{...}" />
+                <marker date="1506634404000" expanded="true" signature="687:1205" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="adding_already_existing_product.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding>
+                <marker date="1506633705000" expanded="false" signature="6:40" ph="..." />
+                <marker date="1506633705000" expanded="true" signature="78:898" ph="{...}" />
+                <marker date="1506633705000" expanded="true" signature="163:896" ph="{...}" />
+                <marker date="1506633705000" expanded="true" signature="218:713" ph="{...}" />
+                <marker date="1506633705000" expanded="true" signature="315:463" ph="{...}" />
+                <marker date="1506633705000" expanded="true" signature="535:688" ph="{...}" />
+                <marker date="1506633705000" expanded="true" signature="777:890" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -42,18 +142,55 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ow</find>
+      <find>own</find>
+      <find>owin</find>
+      <find>ui</find>
+      <find>/ui</find>
+      <find>/u</find>
+      <find>/</find>
+      <find>\ui</find>
+      <find>\u</find>
+      <find>\</find>
+      <find>s</find>
+      <find>se</find>
+      <find>serv</find>
+      <find>server</find>
+      <find>&quot;/server</find>
+      <find>&quot;server</find>
+      <find>&quot;\server</find>
+      <find>\server</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/tests/product/adding_unique_product.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/contexts/metadata_context.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/infrastructure/status_endpoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/server/product/ProductController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tests/metadata/adding_metadata.cs" />
         <option value="$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs" />
+        <option value="$PROJECT_DIR$/server/Program.cs" />
+        <option value="$PROJECT_DIR$/server/server.csproj" />
+        <option value="$PROJECT_DIR$/tests/tests.csproj" />
+        <option value="$PROJECT_DIR$/server/Startup.cs" />
+        <option value="$PROJECT_DIR$/tests/product/adding_already_existing_product.cs" />
+        <option value="$PROJECT_DIR$/tests/metadata/adding_metadata.cs" />
+        <option value="$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" />
+        <option value="$PROJECT_DIR$/tests/product/adding_unique_product.cs" />
       </list>
     </option>
   </component>
@@ -65,11 +202,11 @@
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/web/node_modules" />
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1396" />
-    <option name="height" value="803" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
@@ -88,30 +225,59 @@
     <panes>
       <pane id="SolutionExplorer">
         <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netcore.cms (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="netcore.cms (2 projects)" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.jetbrains.rider.projectView.solutionExplorer.SolutionExplorerNodeRider" />
-            </PATH_ELEMENT>
-          </PATH>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="server" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="server" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="metadata" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="server" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="product" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="server" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Server" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="tests" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="infrastructure" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="metadata" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="netcore.cms (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="tests" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="product" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
@@ -125,8 +291,12 @@
     <property name="node.js.selected.package.jscs" value="" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
+    <property name="RiderNuGetCacheManager.AutoClear.temp" value="1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -140,20 +310,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected=".NET Project.Default">
-    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
-      <option name="PROJECT_PATH" value="" />
-      <option name="PROJECT_KIND" value="None" />
-      <option name="PROJECT_TFM" value="" />
-      <option name="EXE_PATH" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="USE_MONO" value="0" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
-      <envs />
-      <method />
-    </configuration>
-    <configuration default="false" name="Default" type="DotNetProject" factoryName=".NET Project">
+  <component name="RunManager" selected=".NET Project.tests">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/netcore.cms.xproj" />
       <option name="PROJECT_KIND" value="DotNetCore" />
       <option name="PROJECT_TFM" value=".NETCoreApp,Version=v1.1" />
@@ -166,11 +324,86 @@
         <env name="ASPNETCORE_ENVIRONMENT" value="Production" />
         <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
       </envs>
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
       <method />
     </configuration>
-    <list size="1">
+    <configuration default="true" type="JavaScriptTestRunnerJest" factoryName="Jest">
+      <node-interpreter value="project" />
+      <working-dir value="" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerProtractor" factoryName="Protractor">
+      <config-file value="" />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run" />
+      <scripts />
+      <node-interpreter value="project" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <working-directory />
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui />
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration name="tests" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/tests/tests.csproj" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.0" />
+      <option name="EXE_PATH" value="$PROJECT_DIR$/tests/bin/Debug/netcoreapp2.0/tests.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="USE_MONO" value="0" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <envs />
+    </configuration>
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue=".NET Project.Default" />
+      <item index="1" class="java.lang.String" itemvalue=".NET Project.tests" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue=".NET Project.tests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
@@ -185,11 +418,17 @@
       <workItem from="1490718202951" duration="381000" />
       <workItem from="1490718614033" duration="805000" />
       <workItem from="1505060722589" duration="634000" />
+      <workItem from="1506281775964" duration="913000" />
+      <workItem from="1506283080342" duration="81000" />
+      <workItem from="1506283528719" duration="5077000" />
+      <workItem from="1506370789281" duration="2230000" />
+      <workItem from="1506374121808" duration="2575000" />
+      <workItem from="1506629573371" duration="3200000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1820000" />
+    <option name="totallyTimeSpent" value="15896000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -201,23 +440,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1396" height="803" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32833788" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5222222" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Unit Tests" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3282353" sideWeight="0.475" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32970026" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="NuGet" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28235295" sideWeight="0.4861111" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24097222" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.49722221" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.47777778" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -226,26 +465,222 @@
       <window_info id="Change Signature" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32942554" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="processedProjectFiles" value="true" />
+    <option name="version" value="1" />
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/infrastructure/status_endpoint.cs</url>
+          <line>18</line>
+          <properties startOffset="395" endOffset="469" documentPath="$PROJECT_DIR$/tests/infrastructure/status_endpoint.cs" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs</url>
+          <line>37</line>
+          <properties startOffset="892" endOffset="1095" documentPath="$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs</url>
+          <line>43</line>
+          <properties startOffset="1095" endOffset="1095" documentPath="$PROJECT_DIR$/tests/contexts/infrastructure_context.cs" />
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs</url>
+          <line>19</line>
+          <properties startOffset="492" endOffset="703" documentPath="$PROJECT_DIR$/tests/product/adding_already_existing_product.cs" />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/server/product/ProductController.cs</url>
+          <line>21</line>
+          <properties startOffset="633" endOffset="899" documentPath="$PROJECT_DIR$/server/product/ProductController.cs" />
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs</url>
+          <line>49</line>
+          <properties startOffset="1418" endOffset="1492" documentPath="$PROJECT_DIR$/tests/metadata/adding_metadata.cs" />
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/tests/product/adding_unique_product.cs</url>
+          <line>27</line>
+          <properties startOffset="710" endOffset="784" documentPath="$PROJECT_DIR$/tests/product/adding_unique_product.cs" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="10" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+    <entry file="file://$PROJECT_DIR$/server/server.csproj">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="14" lean-forward="false" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="14" lean-forward="false" selection-start-line="24" selection-start-column="2" selection-end-line="26" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="35" column="81" lean-forward="false" selection-start-line="35" selection-start-column="81" selection-end-line="35" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/metadata_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/infrastructure/health_endpoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/metadata_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/infrastructure/health_endpoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Program.cs" />
+    <entry file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -253,7 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -261,7 +695,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -269,7 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -277,32 +709,187 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+    <entry file="file://$PROJECT_DIR$/server/web/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="10" column="6" lean-forward="false" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="194">
+          <caret line="305" column="15" lean-forward="false" selection-start-line="305" selection-start-column="15" selection-end-line="305" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/health/EnviromentVarsMiddleware.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="false" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="345">
+          <caret line="30" column="37" lean-forward="false" selection-start-line="30" selection-start-column="37" selection-end-line="30" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/metadata_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/infrastructure/health_endpoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Program.cs" />
+    <entry file="file:///usr/local/share/dotnet/sdk/2.0.0/Sdks/Microsoft.NET.Sdk/build/Microsoft.NET.Sdk.Common.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="86" column="4" lean-forward="false" selection-start-line="86" selection-start-column="4" selection-end-line="86" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/UnitTest1.cs" />
+    <entry file="file://$PROJECT_DIR$/server/server.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="20" lean-forward="false" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" lean-forward="false" selection-start-line="22" selection-start-column="10" selection-end-line="22" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="37" column="19" lean-forward="false" selection-start-line="32" selection-start-column="17" selection-end-line="37" selection-end-column="19" />
           <folding>
-            <marker date="1505061251000" expanded="true" signature="6:197" ph="..." />
-            <marker date="1505061251000" expanded="true" signature="228:1452" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="273:1450" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="404:450" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="506:584" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="670:950" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="973:1304" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="1084:1261" ph="{...}" />
-            <marker date="1505061251000" expanded="true" signature="1366:1444" ph="{...}" />
+            <marker date="1506632558000" expanded="false" signature="6:328" ph="..." />
+            <marker date="1506632558000" expanded="true" signature="359:2204" ph="{...}" />
+            <marker date="1506632558000" expanded="true" signature="387:2202" ph="{...}" />
+            <marker date="1506632558000" expanded="true" signature="556:781" ph="{...}" />
+            <marker date="1506632558000" expanded="true" signature="845:1343" ph="{...}" />
+            <marker date="1506632558000" expanded="true" signature="966:1265" ph="/* .UseStaticFiles(new StaticFileOptions ... */" />
+            <marker date="1506632558000" expanded="true" signature="1423:2196" ph="{...}" />
+            <marker date="1506632558000" expanded="true" signature="1529:1806" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/infrastructure/status_endpoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="45" lean-forward="false" selection-start-line="19" selection-start-column="45" selection-end-line="19" selection-end-column="45" />
+          <folding>
+            <marker date="1487947814000" expanded="false" signature="6:75" ph="..." />
+            <marker date="1487947814000" expanded="true" signature="120:597" ph="{...}" />
+            <marker date="1487947814000" expanded="true" signature="180:595" ph="{...}" />
+            <marker date="1487947814000" expanded="true" signature="219:314" ph="{...}" />
+            <marker date="1487947814000" expanded="true" signature="372:589" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/metadata/adding_metadata.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="30" column="34" lean-forward="false" selection-start-line="30" selection-start-column="34" selection-end-line="30" selection-end-column="34" />
+          <folding>
+            <marker date="1506633949000" expanded="false" signature="6:151" ph="..." />
+            <marker date="1506633949000" expanded="true" signature="189:2572" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="252:2570" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="291:1331" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="403:1256" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="443:1190" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="471:799" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="673:775" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="827:1168" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="1036:1144" ph="{...}" />
+            <marker date="1506633949000" expanded="true" signature="1395:2564" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/product/ProductController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding>
+            <marker date="1491165274000" expanded="false" signature="6:79" ph="..." />
+            <marker date="1491165274000" expanded="true" signature="118:1615" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="168:1613" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="362:470" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="610:1235" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="670:899" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="742:884" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="1023:1126" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="1369:1607" ph="{...}" />
+            <marker date="1491165274000" expanded="true" signature="1489:1552" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/contexts/infrastructure_context.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="43" column="9" lean-forward="false" selection-start-line="43" selection-start-column="9" selection-end-line="43" selection-end-column="9" />
+          <folding>
+            <marker date="1506634396000" expanded="true" signature="6:230" ph="..." />
+            <marker date="1506634396000" expanded="true" signature="269:1980" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="325:1978" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="574:732" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="608:680" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="763:828" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="869:1096" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="1152:1240" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="1296:1384" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="1439:1782" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="1535:1630" ph="{...}" />
+            <marker date="1506634396000" expanded="true" signature="1863:1972" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/product/adding_already_existing_product.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1506633705000" expanded="false" signature="6:40" ph="..." />
+            <marker date="1506633705000" expanded="true" signature="78:898" ph="{...}" />
+            <marker date="1506633705000" expanded="true" signature="163:896" ph="{...}" />
+            <marker date="1506633705000" expanded="true" signature="218:713" ph="{...}" />
+            <marker date="1506633705000" expanded="true" signature="315:463" ph="{...}" />
+            <marker date="1506633705000" expanded="true" signature="535:688" ph="{...}" />
+            <marker date="1506633705000" expanded="true" signature="777:890" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/product/adding_unique_product.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="23" lean-forward="false" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
+          <folding>
+            <marker date="1506634404000" expanded="false" signature="6:116" ph="..." />
+            <marker date="1506634404000" expanded="true" signature="154:1213" ph="{...}" />
+            <marker date="1506634404000" expanded="true" signature="229:1211" ph="{...}" />
+            <marker date="1506634404000" expanded="true" signature="274:623" ph="{...}" />
+            <marker date="1506634404000" expanded="true" signature="371:519" ph="{...}" />
+            <marker date="1506634404000" expanded="true" signature="687:1205" ph="{...}" />
           </folding>
         </state>
       </provider>

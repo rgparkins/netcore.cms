@@ -16,13 +16,7 @@ namespace Parkwell.cms.server
 
             var builder = new WebHostBuilder()
                 .UseStartup<Startup>()
-                .UseKestrel(options =>
-                {
-                    if (config["threadCount"] != null)
-                    {
-                        options.ThreadCount = int.Parse(config["threadCount"]);
-                    }
-                })
+                .UseKestrel()
                 .UseContentRoot(Path.Combine(Directory.GetCurrentDirectory(), "server/ui"))
                 .UseUrls("http://localhost:5000");
 

@@ -37,8 +37,7 @@ namespace Parkwell.cms.tests.contexts
         {
             server = new TestServer(
                 new WebHostBuilder()
-                .UseStartup<Startup>());
-
+                    .UseStartup<Startup>());
             client = server.CreateClient();
 
             container = Startup.Container;

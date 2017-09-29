@@ -28,7 +28,7 @@ namespace Parkwell.cms.tests.product
                       },
                       new {
                         questionType = "Dropdown",
-                        id = "subcategory",
+                        id = "subCategory",
                         title = "Sub category",
                         options = new[]
                         {

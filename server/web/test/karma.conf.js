@@ -18,7 +18,7 @@ module.exports = function (config) {
     ],
 
     preprocessors: {
-      //'app/views/templates/*.html': ['ng-html2js']
+      'app/views/templates/*.html': ['ng-html2js']
     },
 
     ngHtml2JsPreprocessor: {

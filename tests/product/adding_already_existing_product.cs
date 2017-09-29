@@ -11,7 +11,7 @@ namespace Parkwell.cms.tests.product
 
             When_adding_a_product(
                 new {
-                    @ref = GetOrCreateRandomId(),
+                    @id = GetOrCreateRandomId(),
                     description = "a test",
                     title = "title"
                 }
@@ -19,7 +19,7 @@ namespace Parkwell.cms.tests.product
 
             When_adding_a_product(
                 new {
-                    @ref = GetOrCreateRandomId(false),
+                    @id = GetOrCreateRandomId(false),
                     description = "a test",
                     title = "title"
                 }
