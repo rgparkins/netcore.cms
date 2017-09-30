@@ -17,8 +17,7 @@ namespace Parkwell.cms.server
             var builder = new WebHostBuilder()
                 .UseStartup<Startup>()
                 .UseKestrel()
-                .UseContentRoot(Path.Combine(Directory.GetCurrentDirectory(), "server/ui"))
-                .UseUrls("http://localhost:5000");
+                .UseUrls("http://*:5000");
 
             var host = builder.Build();
             host.Run();

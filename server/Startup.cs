@@ -30,12 +30,12 @@ namespace Parkwell.cms.server
             app.UseStatusMiddleware()
                .UseHealthMiddleware()
                .UseDefaultFiles()
-//               .UseStaticFiles(new StaticFileOptions
-//               {
-//                    FileProvider = new PhysicalFileProvider(
-//                        Path.Combine(Directory.GetCurrentDirectory(), "server/web")),
-//                    RequestPath = new PathString("")
-//               })
+              .UseStaticFiles(new StaticFileOptions
+              {
+                   FileProvider = new PhysicalFileProvider(
+                       Path.Combine(Directory.GetCurrentDirectory(), "server/web/app")),
+                   RequestPath = new PathString("")
+              })
                .UseMvc();
 
             BsonClassMapper.Configure();
