@@ -5,34 +5,73 @@ using Parkwell.cms.server.product;
 
 namespace Parkwell.cms.server
 {
-    public class MongoStorageModule : Module
+    public class StorageModule : Module
     {
-        string _connectionString;
-        public MongoStorageModule(string connectionString)
+        private readonly string _connectionString;
+
+        public StorageModule(string connectionString)
         {
             _connectionString = connectionString;
         }
 
         protected override void Load(ContainerBuilder bldr)
         {
-            var mongoUrl = MongoUrl.Create(_connectionString);
+            if (!string.IsNullOrEmpty(_connectionString))
+            {
+                bldr.RegisterModule(new MongoStorageModule(_connectionString));
+            }
+            else
+            {
+                bldr.RegisterModule<InMemoryStorageModule>();
+            }
+        }
+        
+        class InMemoryStorageModule : Module
+        {
+            protected override void Load(ContainerBuilder bldr)
+            {
+                bldr.RegisterType<InMemoryProductStore>()
+                    .AsImplementedInterfaces()
+                    .SingleInstance();
 
-            var settings = MongoClientSettings.FromUrl(mongoUrl);
-            settings.MaxConnectionPoolSize = 150;
-            settings.MinConnectionPoolSize = 150;
-            settings.WaitQueueSize = 500;
+                bldr.RegisterType<InMemoryMetadataStore>()
+                    .AsImplementedInterfaces()
+                    .SingleInstance();
+            }
+        }
+        
+        class MongoStorageModule : Module
+        {
+            readonly string _connectionString;
+            
+            public MongoStorageModule(string connectionString)
+            {
+                _connectionString = connectionString;
+            }
 
-            bldr.Register(_ =>
-                new MongoClient(settings)
-                    .GetDatabase(mongoUrl.DatabaseName))
-                   .As<IMongoDatabase>()
-                   .SingleInstance();
+            protected override void Load(ContainerBuilder bldr)
+            {
+                var mongoUrl = MongoUrl.Create(_connectionString);
 
-            bldr.RegisterType<MongoProductStore>()
-                     .AsImplementedInterfaces();
+                var settings = MongoClientSettings.FromUrl(mongoUrl);
+                settings.MaxConnectionPoolSize = 150;
+                settings.MinConnectionPoolSize = 150;
+                settings.WaitQueueSize = 500;
 
-            bldr.RegisterType<MongoMetadataStore>()
-                .AsImplementedInterfaces();
+                bldr.Register(_ =>
+                        new MongoClient(settings)
+                            .GetDatabase(mongoUrl.DatabaseName))
+                    .As<IMongoDatabase>()
+                    .SingleInstance();
+
+                bldr.RegisterType<MongoProductStore>()
+                    .AsImplementedInterfaces();
+
+                bldr.RegisterType<MongoMetadataStore>()
+                    .AsImplementedInterfaces();
+            }
         }
     }
+    
+    
 }

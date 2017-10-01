@@ -19,19 +19,19 @@ angular.module('webApp')
       controllerAs: 'vm',
       controller: function (metaDataService, dataService, $attrs) {
         var vm = this;
-        
+
         this.answers = [];
 
         function init() {
-          
-          metaDataService.getMetadataByProduct($attrs.formType).then(function (data) {
-            vm.questions = data.questions;
+
+          metaDataService.getMetadataByProduct($attrs.formType, function (data) {
+            vm.questions = data.data.questions;
 
             vm.buttonText = "Add";
 
             if ($attrs.formData) {
               vm.buttonText = "Update";
-            
+
               dataService.getData($attrs.formType, $attrs.fetchData).then(function(qData) {
                 vm.answers = qData;
               });

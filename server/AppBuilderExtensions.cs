@@ -18,6 +18,13 @@ namespace Parkwell.cms.server
                 app.UseMiddleware<StatusMiddleware>();
             });
         }
+        
+        public static IApplicationBuilder UseEnvMiddleware(this IApplicationBuilder builder)
+        {
+            return builder.MapWhen(IsEnvRequest, app => {
+                app.UseMiddleware<EnviromentVarsMiddleware>();
+            });
+        }
 
         private static bool IsStatusRequest(HttpContext context)
         {
@@ -27,6 +34,11 @@ namespace Parkwell.cms.server
         private static bool IsHealthRequest(HttpContext context)
         {
             return context.Request.Path == "/health";
+        }
+        
+        private static bool IsEnvRequest(HttpContext context)
+        {
+            return context.Request.Path == "/env";
         }
     }
 }

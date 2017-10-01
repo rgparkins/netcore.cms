@@ -11,41 +11,44 @@ using Microsoft.Extensions.FileProviders;
 
 namespace Parkwell.cms.server
 {
-    public class Startup 
+    public class Startup
     {
         public static IContainer Container;
         public IConfigurationRoot Configuration { get; set; }
-        
+
         public Startup(IHostingEnvironment env)
         {
             var cwd = Directory.GetCurrentDirectory();
-           
+
             var configurationBuilder = new ConfigurationBuilder();
-            
+
             Configuration = configurationBuilder.Build();
         }
-        
+
         public void Configure(IApplicationBuilder app)
         {
             app.UseStatusMiddleware()
-               .UseHealthMiddleware()
-               .UseDefaultFiles()
-              .UseStaticFiles(new StaticFileOptions
-              {
-                   FileProvider = new PhysicalFileProvider(
-                       Path.Combine(Directory.GetCurrentDirectory(), "server/web/app")),
-                   RequestPath = new PathString("")
-              })
-               .UseMvc();
+                .UseHealthMiddleware()
+                .UseEnvMiddleware()
+                .UseDefaultFiles()
+                .UseStaticFiles(new StaticFileOptions
+                {
+                    FileProvider = new PhysicalFileProvider(
+                        Path.Combine(Directory.GetCurrentDirectory(), "web/app")),
+                    RequestPath = new PathString("")
+                })
+                .UseMvc();
 
             BsonClassMapper.Configure();
         }
+
 
         public IServiceProvider ConfigureServices(IServiceCollection services)
         {
             services.AddOptions();
             services
-                .AddMvcCore(options => {
+                .AddMvcCore(options =>
+                {
                     options.InputFormatters.Clear();
                     options.OutputFormatters.Clear();
 
@@ -56,9 +59,9 @@ namespace Parkwell.cms.server
             // Create the container builder.
             var builder = new ContainerBuilder();
 
-            builder.RegisterModule<InMemoryStorageModule>();
+            builder.RegisterModule(new StorageModule(Environment.GetEnvironmentVariable("MongoConnectionString")));
             builder.Populate(services);
-            
+
             Container = builder.Build();
 
             // Create the IServiceProvider based on the container.
