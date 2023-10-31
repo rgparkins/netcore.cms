@@ -1,8 +1,8 @@
 using System.Net;
 using NUnit.Framework;
-using Parkwell.cms.tests.contexts;
+using rgparkins.cms.tests.contexts;
 
-namespace Parkwell.cms.tests.infrastructure
+namespace rgparkins.cms.tests.infrastructure
 {
     public class Health_endpoint : infrastructure_context
     {

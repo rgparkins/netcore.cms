@@ -2,13 +2,13 @@ using System;
 using System.Net.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.TestHost;
-using Parkwell.cms.server;
+using rgparkins.cms.server;
 using Autofac;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using System.Text;
 
-namespace Parkwell.cms.tests.contexts
+namespace rgparkins.cms.tests.contexts
 {
     public class metadata_context : IDisposable
     {

@@ -3,7 +3,7 @@ using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Conventions;
 using MongoDB.Bson.Serialization.Serializers;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public static class BsonClassMapper
     {

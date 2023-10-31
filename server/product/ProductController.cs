@@ -2,7 +2,7 @@ using System.Net;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Parkwell.cms.server.product
+namespace rgparkins.cms.server.product
 {
     public class ProductController : Controller
     {

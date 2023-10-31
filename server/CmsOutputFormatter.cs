@@ -4,9 +4,9 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Formatters;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
-using Parkwell.cms.server.serialisation;
+using rgparkins.cms.server.serialisation;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class CmsOutputFormatter : IOutputFormatter
     {

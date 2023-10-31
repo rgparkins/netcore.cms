@@ -1,6 +1,6 @@
 using MongoDB.Bson.IO;
 
-namespace Parkwell.cms.server.serialisation
+namespace rgparkins.cms.server.serialisation
 {
     public static class BsonSettings    
     {
@@ -8,7 +8,7 @@ namespace Parkwell.cms.server.serialisation
         {
             DefaultWriterSettings = new JsonWriterSettings
             {
-                OutputMode = JsonOutputMode.Strict
+                OutputMode = JsonOutputMode.CanonicalExtendedJson
             };
         }
         public static JsonWriterSettings DefaultWriterSettings { get; set; }

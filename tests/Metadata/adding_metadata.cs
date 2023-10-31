@@ -1,10 +1,10 @@
 using NUnit.Framework;
 using System.Net;
-using Parkwell.cms.server.serialisation;
-using Parkwell.cms.server.metadata;
+using rgparkins.cms.server.serialisation;
+using rgparkins.cms.server.metadata;
 using System.Collections.Generic;
 
-namespace Parkwell.cms.tests.product
+namespace rgparkins.cms.tests.product
 {
     public class Adding_metadata : contexts.metadata_context
     {

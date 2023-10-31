@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using MongoDB.Bson.Serialization.Attributes;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class Document
     {

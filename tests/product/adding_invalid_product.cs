@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using System.Net;
 
-namespace Parkwell.cms.tests.product
+namespace rgparkins.cms.tests.product
 {
     public class adding_invalid_product : contexts.infrastructure_context
     {

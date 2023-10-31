@@ -1,4 +1,4 @@
-namespace Parkwell.cms.server.product
+namespace rgparkins.cms.server.product
 {
     public class BaseProduct : Document
     {

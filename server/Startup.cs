@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.FileProviders;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class Startup
     {

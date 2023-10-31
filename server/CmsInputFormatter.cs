@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc.Formatters;
 using MongoDB.Bson.IO;
 using MongoDB.Bson.Serialization;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class CmsInputFormatter : IInputFormatter
     {

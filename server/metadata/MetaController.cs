@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Parkwell.cms.server.metadata
+namespace rgparkins.cms.server.metadata
 {
 
     public class MetaController : Controller

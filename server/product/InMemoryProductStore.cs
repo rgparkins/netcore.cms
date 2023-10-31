@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Parkwell.cms.server.product 
+namespace rgparkins.cms.server.product 
 {
     public class InMemoryProductStore : IStoreProducts, IFetchProducts
     {

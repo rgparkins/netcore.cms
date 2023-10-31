@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using MongoDB.Driver;
 using System.Linq;
-using Parkwell.cms.server.product;
+using rgparkins.cms.server.product;
 using System;
 
-namespace Parkwell.cms.server.metadata
+namespace rgparkins.cms.server.metadata
 {
     public class MongoProductStore : IFetchProducts, IStoreProducts
     {
@@ -38,7 +38,7 @@ namespace Parkwell.cms.server.metadata
             await Collection.ReplaceOneAsync(
                 Builders<Product>.Filter.Where(s => s.Id == product.Id),
                 product,
-                new UpdateOptions() { IsUpsert = true });
+                new ReplaceOptions() { IsUpsert = true });
         }
     }
 }

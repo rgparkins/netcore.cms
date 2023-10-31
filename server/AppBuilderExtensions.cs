@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Http;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public static class AppBuilderExtensions 
     {

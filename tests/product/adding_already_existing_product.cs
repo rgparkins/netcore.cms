@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using System.Net;
 
-namespace Parkwell.cms.tests.product
+namespace rgparkins.cms.tests.product
 {
     public class Adding_already_existing_product : contexts.infrastructure_context
     {

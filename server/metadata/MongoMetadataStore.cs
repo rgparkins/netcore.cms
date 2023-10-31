@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using MongoDB.Driver;
 using System.Linq;
 
-namespace Parkwell.cms.server.metadata
+namespace rgparkins.cms.server.metadata
 {
     public class MongoMetadataStore : IFetchMetadata, IStoreMetadata
     {
@@ -36,7 +36,7 @@ namespace Parkwell.cms.server.metadata
             await Collection.ReplaceOneAsync(
                 Builders<Metadata>.Filter.Where(s => s.CollectionName == data.CollectionName),
                 data,
-                new UpdateOptions() { IsUpsert = true });
+                new ReplaceOptions() { IsUpsert = true });
         }
     }
 }

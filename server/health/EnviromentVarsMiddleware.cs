@@ -7,7 +7,7 @@ using System.IO;
 using System.Text;
 using Newtonsoft.Json;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class EnviromentVarsMiddleware 
     {

@@ -2,7 +2,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class HealthMiddleware 
     {

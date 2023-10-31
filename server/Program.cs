@@ -3,7 +3,7 @@ using System.IO;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class Program
     {

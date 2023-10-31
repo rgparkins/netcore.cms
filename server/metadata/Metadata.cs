@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Parkwell.cms.server.metadata
+namespace rgparkins.cms.server.metadata
 {
     public enum QuestionType {
         Dropdown,

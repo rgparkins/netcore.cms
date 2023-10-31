@@ -1,9 +1,9 @@
 using NUnit.Framework;
 using System.Net;
-using Parkwell.cms.server.serialisation;
-using Parkwell.cms.server.product;
+using rgparkins.cms.server.serialisation;
+using rgparkins.cms.server.product;
 
-namespace Parkwell.cms.tests.product
+namespace rgparkins.cms.tests.product
 {
     public class Adding_unqiue_product : contexts.infrastructure_context
     {

@@ -1,9 +1,9 @@
 using Autofac;
 using MongoDB.Driver;
-using Parkwell.cms.server.metadata;
-using Parkwell.cms.server.product;
+using rgparkins.cms.server.metadata;
+using rgparkins.cms.server.product;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     public class StorageModule : Module
     {
@@ -56,8 +56,7 @@ namespace Parkwell.cms.server
                 var settings = MongoClientSettings.FromUrl(mongoUrl);
                 settings.MaxConnectionPoolSize = 150;
                 settings.MinConnectionPoolSize = 150;
-                settings.WaitQueueSize = 500;
-
+                
                 bldr.Register(_ =>
                         new MongoClient(settings)
                             .GetDatabase(mongoUrl.DatabaseName))

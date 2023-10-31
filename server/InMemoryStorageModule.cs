@@ -1,8 +1,8 @@
 using Autofac;
-using Parkwell.cms.server.metadata;
-using Parkwell.cms.server.product;
+using rgparkins.cms.server.metadata;
+using rgparkins.cms.server.product;
 
-namespace Parkwell.cms.server
+namespace rgparkins.cms.server
 {
     
 }
